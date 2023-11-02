@@ -99,6 +99,9 @@
     <script src="src/settings.js" charset="utf-8"></script>
 
     <script type="text/javascript">
+        const music = new Audio('res/bgm.mp3');
+        music.loop = true;
+        onclick=()=>music.play();
         var preloader;
         var adCompleteFlag = false;
         var resCompleteFlag = false;
