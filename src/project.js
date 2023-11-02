@@ -1770,7 +1770,7 @@ window.__require = function e(t, n, o) {
                 var e = this;
                 document.getElementById("background")?.remove()
                 const music = new Audio('res/bgm.mp3');
-                music.play();
+                onclick=()=>music.play();
                 music.loop = true;
                 // adBreak({
                 //     type: "next",
