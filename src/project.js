@@ -1782,6 +1782,7 @@ window.__require = function e(t, n, o) {
             },
             enableButtons: function() {},
             addTouchEvents: function() {
+                music.play();
                 var e = this;
                 this.node.on(cc.Node.EventType.TOUCH_START, function(t) {
                     if (o.GAME_OVER_BOOL && o.noTouchBool) return o.gameScore++, e.sceneScore.string = o.gameScore, console.log("ggoog", o.gameScore), o.gameScore >= 2 && (this.lastPos = t.getLocation(), e.gameEnd()), !0
